@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.techno.gallery.SquareFrame xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@drawable/tile_bg" android:padding="3dp">
+    <ImageView android:id="@+id/thumb"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="@color/tile_placeholder" android:scaleType="centerCrop" />
+    <TextView android:id="@+id/play"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="center" android:text="▶"
+        android:textSize="26sp" android:textColor="#ccffffff"
+        android:shadowColor="#ff000000" android:shadowRadius="4"
+        android:visibility="gone" />
+</com.techno.gallery.SquareFrame>

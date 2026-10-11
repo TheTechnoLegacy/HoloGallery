@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_slideshow" android:title="@string/slide_show"
+        android:icon="@android:drawable/ic_menu_slideshow" android:showAsAction="ifRoom" />
+    <item android:id="@+id/menu_share" android:title="@string/share"
+        android:icon="@android:drawable/ic_menu_share" android:showAsAction="ifRoom" />
+    <item android:id="@+id/menu_delete" android:title="@string/delete"
+        android:icon="@android:drawable/ic_menu_delete" android:showAsAction="ifRoom" />
+    <item android:id="@+id/menu_crop" android:title="@string/crop" android:showAsAction="never" />
+    <item android:id="@+id/menu_rotate_left" android:title="@string/rotate_left" android:showAsAction="never" />
+    <item android:id="@+id/menu_rotate_right" android:title="@string/rotate_right" android:showAsAction="never" />
+    <item android:id="@+id/menu_set_as" android:title="@string/set_as" android:showAsAction="never" />
+    <item android:id="@+id/menu_details" android:title="@string/details" android:showAsAction="never" />
+    <item android:id="@+id/menu_map" android:title="@string/show_on_map" android:showAsAction="never" />
+</menu>

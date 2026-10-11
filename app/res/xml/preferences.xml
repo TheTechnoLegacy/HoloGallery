@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_gallery_category">
+        <ListPreference
+            android:key="pref_gallery_size_key"
+            android:title="@string/pref_gallery_size_title"
+            android:summary="@string/pref_gallery_size_summary"
+            android:entries="@array/size_choices"
+            android:entryValues="@array/size_values"
+            android:defaultValue="@string/default_value_pref_gallery_size"
+            android:dialogTitle="@string/pref_gallery_size_title" />
+        <ListPreference
+            android:key="pref_gallery_sort_key"
+            android:title="@string/pref_gallery_sort_title"
+            android:summary="@string/pref_gallery_sort_summary"
+            android:entries="@array/sort_choices"
+            android:entryValues="@array/sort_values"
+            android:defaultValue="@string/default_value_pref_gallery_sort"
+            android:dialogTitle="@string/pref_gallery_sort_title" />
+        <CheckBoxPreference
+            android:key="pref_gallery_confirm_delete_key"
+            android:title="@string/pref_confirm_delete_title"
+            android:summary="@string/pref_confirm_delete_summary"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_slideshow_category">
+        <ListPreference
+            android:key="pref_gallery_slideshow_interval_key"
+            android:title="@string/pref_interval_title"
+            android:summary="@string/pref_interval_summary"
+            android:entries="@array/interval_choices"
+            android:entryValues="@array/interval_values"
+            android:defaultValue="@string/default_value_pref_interval"
+            android:dialogTitle="@string/pref_interval_title" />
+        <ListPreference
+            android:key="pref_gallery_slideshow_transition_key"
+            android:title="@string/pref_transition_title"
+            android:summary="@string/pref_transition_summary"
+            android:entries="@array/transition_choices"
+            android:entryValues="@array/transition_values"
+            android:defaultValue="@string/default_value_pref_transition"
+            android:dialogTitle="@string/pref_transition_title" />
+        <CheckBoxPreference
+            android:key="pref_gallery_slideshow_repeat_key"
+            android:title="@string/pref_repeat_title"
+            android:summary="@string/pref_repeat_summary"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:key="pref_gallery_slideshow_shuffle_key"
+            android:title="@string/pref_shuffle_title"
+            android:summary="@string/pref_shuffle_summary"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>
