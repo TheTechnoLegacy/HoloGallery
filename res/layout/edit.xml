@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@android:color/black">
+    <ImageView android:id="@+id/preview"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:scaleType="fitCenter" android:padding="6dp" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_weight="0" android:background="@drawable/background">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="8dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/brightness" android:textColor="#ffffffff" />
+            <SeekBar android:id="@+id/brightness" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:max="200" android:progress="100" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/contrast" android:textColor="#ffffffff" />
+            <SeekBar android:id="@+id/contrast" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:max="200" android:progress="100" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/saturation" android:textColor="#ffffffff" />
+            <SeekBar android:id="@+id/saturation" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:max="200" android:progress="100" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button android:id="@+id/f_none" android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="@string/filter_none" />
+                <Button android:id="@+id/f_bw" android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="@string/filter_bw" />
+                <Button android:id="@+id/f_sepia" android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="@string/filter_sepia" />
+                <Button android:id="@+id/f_invert" android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="@string/filter_invert" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button android:id="@+id/rot_left" android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="@string/rotate_left" />
+                <Button android:id="@+id/rot_right" android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="@string/rotate_right" />
+                <Button android:id="@+id/flip" android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="@string/flip" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button android:id="@+id/discard" android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="@string/crop_discard_text" />
+                <Button android:id="@+id/save" android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="@string/crop_save_text" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
