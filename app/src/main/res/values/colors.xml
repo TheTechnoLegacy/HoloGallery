@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="bubble_dark_background">#b2191919</color>
-    <color name="recording_time_elapsed_text">#ffffffff</color>
-    <color name="recording_time_remaining_text">#ffff0033</color>
-</resources>

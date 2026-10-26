@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="scrim">#99000000</color>
-    <color name="tile_selected">#ff33b5e5</color>
-    <color name="tile_placeholder">#ff222222</color>
-</resources>
